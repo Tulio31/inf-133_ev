@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    padding: 0;
+}
+
+body{
+    font-family: 'roboto',sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dbe8eb;
+}
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.2em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{list-style: none;}
+
+button{
+    font-size:1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(1, 54, 63, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0,0.5);
+    color: rgb(199, 223, 255);
+    background-color:rgba(0,174,180,255);
+}
+button:hover{
+        background-color: #1f737d;
+}
+.contenedor{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background-color: rgba(58,71,80,255);
+    text-align: center;
+    left: 0;
+    top: 0;
+}
+header h1{
+    font-family: 'roboto';
+    color: #cef6fc;
+    
+}
+header .contenedor{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header .contenedor img{
+    height: 80px;
+    padding-right: 20px;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px ;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(2, 2, 7);
+}
+header nav a:hover{
+    color:rgba(0,173,180,255);
+}
+#recetas{
+    background-color: #3a4750;
+    color:  rgb(234, 234, 245);
+    text-align: center;
+}
+#recetas .contenedor{
+    padding: 15px 20px;
+    margin-top: 50px;
+
+}
+#recetas h2{
+    margin: 50px 30px;
+    text-decoration: underline overline;
+}
+#recetas p{
+    display:flex;
+    margin: 30px;
+    color: rgb(199, 223, 255);
+}
+#recetas .carta{
+    padding: 20px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+        ,url("../imagenes/alfredo.jpg");
+        background-position: center center;
+        background-size: cover;
+
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+        ,url("../imagenes/arrozvalencia.jpg");
+        background-position: center center;
+        background-size: cover;
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+        ,url("../imagenes/lasaña.jpg");
+        background-position: center center;
+        background-size: cover;
+}
+#beneficios .contenedor{
+    text-align: center;
+    padding: 20px;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+#beneficios li{
+    margin: 10px 0px;
+    font-weight: bold;
+}
+#beneficios .contenedor a{
+    color: #3a4750;
+    text-decoration: none;
+}
+#beneficios .contenedor a:hover{
+    color: whitesmoke;
+
+}
+footer .contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #3a4750;
+    color: white;
+    padding-top: 5vh;
+    padding-bottom: auto;
+}
+footer a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(0,0,0,0.8);
+}
+footer a:hover{
+    color:rgba(0,173,180,255);
+}
+@media (min-width:720px){
+    body{
+        margin: 0px;
+        padding-top: 25vh;
+    }
+    header{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+         height: auto;
+         text-align: auto;
+         justify-content: space-between;
+         align-items: center;
+         
+    }
+    header .contenedor{
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    footer .contenedor{
+        margin-bottom: 0;
+
+    }
+}
